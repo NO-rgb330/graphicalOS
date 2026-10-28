@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Web OS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <div id="desktop">
+    <div id="desktop-icons"></div>
+    <div id="windows"></div>
+  </div>
+
+  <div id="start-menu" hidden>
+    <div class="sm-header">
+      <div class="sm-avatar"></div>
+      <div>
+        <div class="sm-title">Web OS</div>
+        <div class="sm-subtitle">A browser desktop</div>
+      </div>
+    </div>
+    <div id="sm-apps"></div>
+    <div class="sm-footer">
+      <button id="sm-theme" class="sm-btn">Toggle Theme</button>
+    </div>
+  </div>
+
+  <div id="taskbar">
+    <button id="start-btn" title="Start"></button>
+    <div id="taskbar-apps"></div>
+    <div id="taskbar-tray">
+      <span id="fs-badge" title="Storage backend"></span>
+      <span id="clock">--:--</span>
+    </div>
+  </div>
+
+  <script src="fs.js"></script>
+  <script src="apps/calculator.js"></script>
+  <script src="apps/notepad.js"></script>
+  <script src="apps/fileexplorer.js"></script>
+  <script src="apps/browser.js"></script>
+  <script src="apps/mediaplayer.js"></script>
+  <script src="apps/settings.js"></script>
+  <script src="desktop.js"></script>
+</body>
+</html>
